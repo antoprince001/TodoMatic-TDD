@@ -54,8 +54,7 @@ describe('Todolist tasks', () => {
     })
 
     it('can filter for completed tasks', () => {
-      // We can perform similar steps as the test above to ensure
-      // that only completed tasks are shown
+      
       cy.contains('Completed').click()
 
       cy.get('.todo-list li')
@@ -69,8 +68,7 @@ describe('Todolist tasks', () => {
     })
 
     it('Edit a task', () => {
-      // We can perform similar steps as the test above to ensure
-      // that only completed tasks are shown
+      
       cy.contains('All').click()
 
       cy.contains('Test Todo')
@@ -89,8 +87,7 @@ describe('Todolist tasks', () => {
 
     })
     it('Delete a task', () => {
-      // We can perform similar steps as the test above to ensure
-      // that only completed tasks are shown
+      
       cy.contains('All').click()
 
       cy.contains('Testing Todo')
